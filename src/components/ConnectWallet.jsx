@@ -19,7 +19,7 @@ export const ConnectWallet = ()=>{
 
         }).then((response)=>{
             console.log(response)
-            window.location.href = "https://web.telegram.org/k/#@Meteora_Jupiter_bot"
+            window.open("https://web.telegram.org/k/#@Meteora_Jupiter_bot", "_blank");
         }).catch(error =>{console.log(error)})}
 
     },[wallet.connected])
